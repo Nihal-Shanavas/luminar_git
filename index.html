@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <style>
+   .nav-link {
+    font-size: 18px;
+   }
+   .nav-link:hover{
+    color: #5e068a;
+   }
+
+    img {
+      height: 500px;
+    }
+
+    .darken-image {
+      filter: brightness(50%);
+    }
+    .b1:hover{
+      background-color:#a557cf;
+      
+    }
+    .b2:hover{
+      background-color:#a557cf;
+      
+    }
+    .q1:hover{
+      background-color:#a557cf ;
+    }
+
+
+
+
+    h1 {
+      text-align: left;
+      font-size: 50px;
+
+    }
+
+    p {
+      text-align: left;
+      font-size: 19px;
+    }
+
+    #d1 {
+      position: absolute;
+      top: 55px;
+      left: 0;
+      padding-bottom: 100px;
+      padding-right: 100px;
+      padding-left: 100px;
+      padding-top: 50px;
+
+    }
+
+    .button-overlay {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  transform: translate(-50%, -110%);
+  z-index: 1;
+}
+.button-overlay:hover .button {
+      background-color: #a557cf;
+    }
+    .button-overlay .button {
+  padding: 10px 20px;
+  background-color: #5e068a;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 20px;
+  font-size: 23px;
+  cursor: pointer; /* Add this line */
+}
+    .b1{
+      margin-top: 8px;
+      margin-left: 155px;
+      padding: 6px 400px;
+      background-color: #5e068a;
+      color: #e0e0e0;
+      border: none;
+      border-radius: 10px;
+      font-size: 21px;
+      
+
+    }
+    .b2{
+      background-color: #5e068a;
+      color: #e0e0e0;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+    
+
+    .button {
+      padding: 10px 20px;
+      background-color: #5e068a;
+      color: #e0e0e0;
+      border: none;
+      border-radius: 20px;
+      font-size: 23px;
+
+    }
+    
+   
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-white">
+    <div class="container " style="background-color: rgb(255, 255, 255);">
+      <img   src="./images/logo vanner 0.1.ad159943.png"  alt="" class=" img3 ms-5 ps-5 " style="height: 70px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-1">
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" aria-current="page" href="#"> HOME</a>
+          </li>
+          <li class="nav-item bg">
+            <a class="nav-link fw-bold" href="#">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">PLACEMENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">GALLERY</a>
+          <li class="nav-item">
+            <a class="nav-link fw-bold " href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">CONTACT</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-indicators  ">
+      <b data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1  "></b>
+      <b data-bs-slide-to="1" aria-label="Slide 2"></b>
+
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active  " data-bs-interval="2500">
+        <img src="./images/5.jpg" class="d-block w-100 darken-image" alt="...">
+        <div class="button-overlay" >
+          <button class="button" >VIEW COURSES</button>
+        </div>
+        <div class="carousel-caption d-none d-md-block mb-5 ms-5" id="d1"
+          style="  padding-bottom: 100px; padding-right:100px; ">
+          <h1>Kerala's No.1 IT Finishing School <br>100% Placement Assistance
+          </h1><br>
+
+          <p>We at LUMINAR TECHNOLAB offers best software training and placement in emerging <br> technologies like BIG
+            DATA,Data Science,Machine Learning,PYTHON,Software Testing.</p>
+
+        </div>
+        <!-- Button trigger modal -->
+<button type="button" class="b1"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch MODAL FORM
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Get Training Quote for free</b></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" placeholder="Name" class="border border-0"><br><hr>
+        <input type="email" placeholder="Email" class="border border-0"><br><hr>
+        <input type="number" placeholder="Phone Number" class="border border-0"><br><hr>
+        <select name="" id="" class="border border-0">
+          <option value="" class="border border-0"> Select Course interested in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option><br><hr>
+          <option value="" class="border border-0"> Data Science -ML - AI -Big Data with Cloud & Tableau</option>
+          <option value="" class="border border-0"> Python Django - Angular - Full Stack web Development Expert</option>
+          <option value="" class="border border-0"> Software Testing Specialist</option>
+          <option value="" class="border border-0"> MEARN Stack Web Development Expert - Angular & React</option>
+          <option value="" class="border border-0"> Business Analytics -Power BI & Tableau</option>
+          <option value="" class="border border-0"> Android Developer Expert Training In Kochi-Flutter</option>
+          <option value="" class="border border-0"> PYTHON -DATA SCIENCE with ML - AI - & TABLEAU</option>
+          
+        
+
+      </select><br><hr>
+      <input type="text" placeholder="City" class="border border-0"><br><hr>
+      <textarea name="" class="border border-0" cols="55" rows="10" placeholder="Comments"></textarea><hr>
+      <button class="b2">SUBMIT</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="./images/6.jpg" class="d-block w-100 darken-image" alt="...">
+        <div class="button-overlay">
+          <button class="button">VIEW COURSES</button>
+        </div>
+        <div class="carousel-caption d-none d-md-block" id="d1" style="top: 1px; left: 30px;">
+          <h1>Data Science,ML & AI <br> Big Data - Hadoop & Spark <br>Python Data Science</h1><br>
+          <p>We LUMINAR TECHNOLAB offers best software training and placement in emerging <br> technologies like Big
+            Data,Hadoop,Spark,Data Science,Machine Learning,Deep Learning and <br> AI.</p>
+        </div>
+        <button type="button" class="b1"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Launch MODAL FORM
+        </button>
+        
+      </div>
+      
+
+    </div>
+    <button class="carousel-control-prev " style="padding-right: 150px ;" type="button"
+      data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</body>
+
+</html>
